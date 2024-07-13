@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDSNAB</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="header-row__top">
+            <img src="./assets/img/logo.png" alt="MIDSNAB" class="header-logo__top">
+            <a href="" class="header-location">
+                <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/img/sprite.svg#location"></use>
+                </svg>
+                г. Москва
+            </a>
+            <div class="header-shops">
+                <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/img/sprite.svg#loc-field"></use>
+                </svg>
+                5 магазинов
+            </div>
+            <div class="header-nav">
+                <a href="" class="header-nav__link">Покупаю как юр.лицо</a>
+                <a href="" class="header-nav__link">Получение и оплата</a>
+                <a href="" class="header-nav__link">Сервис и поддержка</a>
+                <a href="" class="header-nav__link">Контакты</a>
+            </div>
+            <div class="header-phone">
+                <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/img/sprite.svg#phone"></use>
+                </svg>
+                <a href="">+7 000 000 00 00</a>
+            </div>
+            <nav role="navigation" class="header_mobile-menu">
+                <div id="menuToggle">
+                    <div class="mobile_burger">
+                        <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="./assets/img/sprite.svg#burger"></use>
+                        </svg>
+                    </div>
+
+                    <ul id="menu">
+                        <div class="mobile_close_menu">
+                            <svg width="37" height="37" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="./assets/img/sprite.svg#close"></use>
+                            </svg>
+                        </div>
+                        <a href="" class="header-location">
+                            <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="./assets/img/sprite.svg#location"></use>
+                            </svg>
+                            г. Москва
+                        </a>
+                        <div class="header-shops">
+                            <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="./assets/img/sprite.svg#loc-field"></use>
+                            </svg>
+                            5 магазинов
+                        </div>
+                        <div class="header-phone">
+                            <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="./assets/img/sprite.svg#phone"></use>
+                            </svg>
+                            <a href="">+7 000 000 00 00</a>
+                        </div>
+                        <li><a href="" class="header-nav__link">Покупаю как юр.лицо</a></li>
+                        <li><a href="" class="header-nav__link">Получение и оплата</a></li>
+                        <li><a href="" class="header-nav__link">Сервис и поддержка</a></li>
+                        <li><a href="" class="header-nav__link">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <hr>
+        <div class="header-row__bottom">
+            <img src="./assets/img/logo.png" alt="MIDSNAB" class="header-logo">
+            <div class="header-search">
+                <input type="text" class="header-search__input" placeholder="Искать товар">
+                <svg width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/img/sprite.svg#search"></use>
+                </svg>
+            </div>
+            <div class="header-icons">
+                <a href="" class="header-icons__link">
+                    <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./assets/img/sprite.svg#like"></use>
+                    </svg>
+                </a>
+                <a href="" class="header-icons__link">
+                    <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./assets/img/sprite.svg#shop-card"></use>
+                    </svg>
+                </a>
+                <a href="" class="header-icons__link">
+                    <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./assets/img/sprite.svg#chart-board"></use>
+                    </svg>
+                </a>
+                <a href="" class="header-icons__link">
+                    <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./assets/img/sprite.svg#user"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="main-navbar__catalog">
+                <div class="main-catalog__title">
+                    <svg width="23" height="24" viewBox="0 0 23 24" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./assets/img/sprite.svg#menu-grid"></use>
+                    </svg>
+                    <h3>Каталог</h3>
+                </div>
+                <div class="main-catalog__list list-hide">
+                    <a href="" class="main-catalog__item">Наименование</a>
+                    <a href="" class="main-catalog__item">Наименование</a>
+                    <a href="" class="main-catalog__item">Наименование</a>
+                    <a href="" class="main-catalog__item">Наименование</a>
+                    <a href="" class="main-catalog__item">Наименование</a>
+                    <a href="" class="main-catalog__item">Наименование</a>
+                    <a href="" class="main-catalog__item">Наименование</a>
+                    <a href="" class="main-catalog__item">Наименование</a>
+                    <a href="" class="main-catalog__item">Наименование</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <div class="breadcrumbs">
+            <a href="./index.html" class="breadcrumbs-main">Главная</a>
+            <span class="breadcrumbs-line">/</span>
+            <a href="./catalog.html" class="breadcrumbs-category">Каталог</a>
+            <span class="breadcrumbs-line">/</span>
+            <a href="./catalog.html" class="breadcrumbs-category">Отопление</a>
+            <span class="breadcrumbs-line">/</span>
+            <a href="./catalog.html" class="breadcrumbs-category">Радиаторы</a>
+            <span class="breadcrumbs-line active-page">/</span>
+            <a href="./catalog.html" class="breadcrumbs-category active-page">Радиатор Radena алюминиевый R500/85 – 10 секций</a>
+        </div>
+        <div class="product-field">
+            <div class="product-field__info">
+                <div class="product-info__top-row">
+                    <div class="product-info__left-column">
+                        <h3 class="product-info__title">Радиатор Radena алюминиевый R500/85 – 10 секций</h3>
+                        <div class="product-info__sub-info">
+                            <div class="product-info__status">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="./assets/img/sprite.svg#arrow-done"></use>
+                                </svg>
+                                В наличии
+                            </div>
+                            <p class="article">Артикул: 000 000</p>
+                            <div class="reviews">Оценка покупателей ☆☆☆☆☆<a href="">0 Отзывов</a></div>
+                            <p class="garancy">12 месяцев гарантии</p>
+                        </div>
+                    </div>
+                    <div class="product-info__right-column">
+                        <span class="product-compare">
+                            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="./assets/img/sprite.svg#compare"></use>
+                            </svg>
+                            Сравнить
+                        </span>
+                        <span class="product-liked">
+                            <svg width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="./assets/img/sprite.svg#liked"></use>
+                            </svg>
+                            В избранное
+                        </span>
+                    </div>
+                </div>
+                <div class="product-info__main">
+                    <div class="product-swiper">
+                        <div class="procuct-info__thumbs-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-thumbs__img">
+                                    <img src="./assets/img/product-thumbs.png" alt="" >
+                                </div>
+                                <div class="swiper-slide swiper-thumbs__img">
+                                    <img src="./assets/img/product-thumbs.png" alt="" >
+                                </div>
+                                <div class="swiper-slide swiper-thumbs__img">
+                                    <img src="./assets/img/product-thumbs.png" alt="" >
+                                </div>
+                                <div class="swiper-slide swiper-thumbs__img">
+                                    <img src="./assets/img/product-thumbs.png" alt="" >
+                                </div>
+                                <div class="swiper-slide swiper-thumbs__img">
+                                    <img src="./assets/img/product-thumbs.png" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-thumbs__img">
+                                    <img src="./assets/img/product-thumbs.png" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-thumbs__img">
+                                    <img src="./assets/img/product-thumbs.png" alt="">
+                                </div>
+                            </div>
+                            <div class="product-prev-button"></div>
+                            <div class="product-next-button"></div>
+                        </div>
+                        <div class="product-image__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/img/product-img.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/img/product-img.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/img/product-img.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/img/product-img.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/img/product-img.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/img/product-img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-values">
+                        <div class="product-values__item">
+                            <p class="values-title">Характеристика</p>
+                            <p class="values-count">0000</p>
+                        </div>
+                        <div class="product-values__item">
+                            <p class="values-title">Характеристика</p>
+                            <p class="values-count">0000</p>
+                        </div>
+                        <div class="product-values__item">
+                            <p class="values-title">Характеристика</p>
+                            <p class="values-count">0000</p>
+                        </div>
+                        <div class="product-values__item">
+                            <p class="values-title">Характеристика</p>
+                            <p class="values-count">0000</p>
+                        </div>
+                        <div class="product-values__item">
+                            <p class="values-title">Характеристика</p>
+                            <p class="values-count">0000</p>
+                        </div>
+                        <div class="product-values__item">
+                            <p class="values-title">Характеристика</p>
+                            <p class="values-count">0000</p>
+                        </div>
+                        <div class="product-values__hidden hide-element">
+                            <div class="product-values__item">
+                                <p class="values-title">Характеристика</p>
+                                <p class="values-count">0000</p>
+                            </div>
+                            <div class="product-values__item">
+                                <p class="values-title">Характеристика</p>
+                                <p class="values-count">0000</p>
+                            </div>
+                            <div class="product-values__item">
+                                <p class="values-title">Характеристика</p>
+                                <p class="values-count">0000</p>
+                            </div>
+                            <div class="product-values__item">
+                                <p class="values-title">Характеристика</p>
+                                <p class="values-count">0000</p>
+                            </div>
+                        </div>
+                        <input id="click-to-hide" type="button" value="Все храктеристики" class="product-values__button">
+                    </div>
+                    <div class="product-info__action">
+                        <div class="product-info__price">
+                            <p class="product-info__price-value">7 100 руб. / шт.</p>
+                            <p class="product-info__price-note">*цена действительна при оформлении заказа в интернет-магазине</p>
+                            <div class="product-info__price-buttons">
+                                <button class="add-to-card" type="button" onclick="window.addToCard.showModal()">В корзину</button>
+                                <button class="buy-one-click" type="button" onclick="window.buyOneClick.showModal()">Купить в 1 клик</button>
+                            </div>
+                        </div>
+                        <div class="product-info__action-info">
+                            <ul class="tab-list">
+                                <li class="tab is-active">Производитель</li>
+                                <li class="tab">Комлектация</li>
+                                <li class="tab">Упаковка</li>
+                            </ul>
+                            <ul class="tab-content">
+                                <li class="content-item is-active">
+                                    <div class="country">
+                                        <img src="./assets/img/germany.png" alt="" class="country-image">
+                                        <p class="country-name">Германия — родина бренда</p>
+                                    </div>
+                                    <div class="country">
+                                        <img src="./assets/img/china.png" alt="" class="country-image">
+                                        <p class="country-name">Китай — страна производства</p>
+                                    </div>
+                                </li>
+                                <li class="content-item">2</li>
+                                <li class="content-item">3</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <dialog id="addToCard">
+                       <div class="modal-addToCard">
+                            <p class="modal-title">Товар в корзине</p>
+                            <div class="modal-product__list">
+                                <div class="modal-product__item">
+                                    <div class="modal-product__item-info">
+                                        <img src="./assets/img/modal-img.png" alt="" class="modal-product__image">
+                                        <p class="modal-product__item-name">Радиатор Radena алюминиевый R500/85 - 6 секций</p>
+                                    </div>
+                                    <span class="modal-procut__item-price">7 100 руб.</span>
+                                </div>
+                                <div class="modal-product__item">
+                                    <div class="modal-product__item-info">
+                                        <img src="./assets/img/modal-img.png" alt="" class="modal-product__image">
+                                        <p class="modal-product__item-name">Радиатор Radena алюминиевый R500/85 - 6 секций</p>
+                                    </div>
+                                    <span class="modal-procut__item-price">7 100 руб.</span>
+                                </div>
+                            </div>
+                            <div class="modal-product__action-row">
+                                <button class="goToBuy">Перейти к оформлению</button>
+                                <span class="modal-spanroduct__summary-price">14 200 руб.</p>
+                            </div>
+                       </div>
+                    </dialog>
+                    <dialog id="buyOneClick">
+                        <form method="dialog" class="modal-closeBtn">
+                            <button class="closeBtn">
+                                <svg width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="./assets/img/sprite.svg#modal-close"></use>
+                                </svg>
+                            </button>
+                        </form>
+                        <div class="modal-buyOneClick">
+                            <p class="modal-title">Покупка в 1 клик</p>
+                            <div class="modal-buyItem">
+                                <div class="modal-buyItem__info">
+                                    <img src="./assets/img/modal-buy.png" alt="" class="modal-buyItem__image">
+                                    <p class="modal-buyItem__name">Радиатор Radena алюминиевый R500/85 - 6 секций</p>
+                                </div>
+                                <span class="modal-buyItem__price">7 100 руб.</span>
+                            </div>
+                            <form class="modal-buyItem__form">
+                                <input type="text" name="Ваше имя" id="YourName" placeholder="Ваше имя">
+                                <input type="tel" name="Номер телефона" id="Phone" placeholder="Телефон для связи">
+                                <button class="buyOneClickSuccess">Оформить заказ</button>
+                            </form>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+            <div class="product-column">
+                <div class="product-column__left">
+                    <div class="product-price__changer">
+                        <div class="changer-content">
+                            <div class="changer-header">
+                                <h4 class="changer-title">Радиатор Radena алюминиевый R500/85 – 10 секций</h4>
+                                <img src="./assets/img/changer-img.png" alt="" class="changer-img">
+                            </div>
+                            <div class="changer-price">
+                                <div class="changer-price__field">
+                                    <p class="changer-price__value">7 100 руб.</p>
+                                    <p class="changer-price__credit">от 0000 руб в мес.</p>
+                                </div>
+                                <button class="buy-to-credit">Купить в кредит</button>
+                            </div>
+                            <div class="changer-history">
+                                <p class="changer-history__title">История цены</p>
+                                <div class="changer-history__value">от 0000 руб. до 0000 руб.</div>
+                            </div>
+                        </div>
+                        <img src="./assets/img/history-1.png" alt="" class="changer-history__img"> 
+                    </div>
+                    <div class="product-property">
+                        <h4 class="property-title">Характеристики</h4>
+                        <a href="" class="property-item">Отзывы</a>
+                        <a href="" class="property-item">Инструкция и документация</a>
+                        <a href="" class="property-item">Доп. оборудование</a>
+                        <a href="" class="property-item">Аксессуары</a>
+                        <a href="" class="property-item">Похожие товары</a>
+                        <a href="" class="property-item">Коммуникатор</a>
+                        <a href="" class="property-item">Обзоры</a>
+                        <a href="" class="property-item">Оценка надежности</a>
+                    </div>
+                    <div class="how-change">
+                        <h4 class="how-change__title">Как выбрать?</h4>
+                        <p class="how-change__text">Советуют наши эксперты</p>
+                        <button class="how-change__button">Смотреть</button>
+                    </div>
+                    <div class="question">
+                        <h4 class="question-title">Сделаем сайт лучше!</h4>
+                        <p class="question-text">Ответьте на несколько вопросов, и для вашего удобства мы улучшим сайт.</p>
+                        <button class="question-button">Пройти опрос</button>
+                    </div>
+                </div>
+                <div class="product-column__right">
+                    <div class="product-property__all">
+                        <h3 class="all-property__main-title">Все характеристики</h3>
+                        <div class="all-property__list">
+                            <div class="all-property__item">
+                                <p class="all-property__title">Характеристика</p>
+                                <p class="all-property__value">0000</p>
+                            </div>
+                            <div class="all-property__item">
+                                <p class="all-property__title">Характеристика</p>
+                                <p class="all-property__value">0000</p>
+                            </div>
+                            <div class="all-property__item">
+                                <p class="all-property__title">Характеристика</p>
+                                <p class="all-property__value">0000</p>
+                            </div>
+                            <div class="all-property__item">
+                                <p class="all-property__title">Характеристика</p>
+                                <p class="all-property__value">0000</p>
+                            </div>
+                            <div class="all-property__item">
+                                <p class="all-property__title">Характеристика</p>
+                                <p class="all-property__value">0000</p>
+                            </div>
+                        </div>
+                        <a href="" class="all-property__view-all">Показать все</a>
+                    </div>
+                    <div class="property-field__description">
+                        <h3 class="property-description__title">Описание</h3>
+                        <p class="property-description__text">
+                            Алюминиевые радиаторы RADENA - секционные радиаторы, разработанные в Италии
+                            в соответствии с европейскими стандартами и с учетом особенностей российских
+                            систем отопления. Имеют оптимальное овальное сечение канала, что повышает
+                            прочность и теплоотдачу каждой секции.
+                        </p>
+                    </div>
+                    <div class="property-field__review">
+                        <div class="property-review__header">
+                            <h3 class="property-review__title">Самый популярный отзыв</h3>
+                            <a href="" class="property-review__all">Все отзывы (10)</a>
+                        </div>
+                        <div class="property-review__first-line">
+                            <div class="property-review__name">Имя покупателя</div>
+                            <div class="property-review__date">12 февраля 2024</div>
+                        </div>
+                        <div class="property-review__list">
+                            <span class="pproperty-review__stars">☆☆☆☆☆</span>
+                            <div class="property-review__plus">
+                                <p class="plus-title">Плюсы</p>
+                                <p class="plus-text">Плюсы</p>
+                            </div>
+                            <div class="property-review__minus">
+                                <p class="minus-title">Минусы</p>
+                                <p class="minus-text">Минусы</p>
+                            </div>
+                            <div class="property-review__review">
+                                <p class="r-review-title">Отзыв</p>
+                                <p class="r-review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                            </div>
+                        </div>
+                        <div class="property-review__action-field">
+                            <a href="" class="all-comments">Комментарии (5)</a>
+                            <div class="review-field__score">
+                                <a href="" class="review-like">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/img/sprite.svg#r-like"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="review-dislike">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/img/sprite.svg#r-dislike"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="similar-products">
+            <h2 class="similat-title">Похожие товары</h2>
+            <div class="similar-content">
+                <div class="product">
+                    <img src="./assets/img/product-1.png" alt="" class="product-image">
+                    <div class="product-content">
+                        <h4 class="product-title">Радиатор Radena алюминиевый R500/85 - 6 секций</h4>
+                        <div class="product-status">
+                            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="./assets/img/sprite.svg#arrow-done"></use>
+                            </svg>
+                            В наличии
+                        </div>
+                        <div class="product-info">
+                            <div class="product-info__compare">
+                                <input type="checkbox" name="" id="checkbox" value="Сравнить">
+                                <label for="checkbox">Сравнить</label>
+                            </div>
+                            <p class="product-info__reviews">0 отзывов</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="product-price">
+                                <p class="new-price">7 100 руб.</p>
+                                <div class="old-price">
+                                    7 100 руб.
+                                    <span class="price-line"></span>
+                                </div>
+                            </div>
+                            <a href="" class="product-add-to-card">
+                                <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="./assets/img/sprite.svg#shop-cardWhite"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="product-add-to-like">
+                                <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="./assets/img/sprite.svg#orange-like"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./assets/img/product-1.png" alt="" class="product-image">
+                    <div class="product-content">
+                        <h4 class="product-title">Радиатор Radena алюминиевый R500/85 - 6 секций</h4>
+                        <div class="product-status">
+                            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="./assets/img/sprite.svg#arrow-done"></use>
+                            </svg>
+                            В наличии
+                        </div>
+                        <div class="product-info">
+                            <div class="product-info__compare">
+                                <input type="checkbox" name="" id="checkbox" value="Сравнить">
+                                <label for="checkbox">Сравнить</label>
+                            </div>
+                            <p class="product-info__reviews">0 отзывов</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="product-price">
+                                <p class="new-price">7 100 руб.</p>
+                                <div class="old-price">
+                                    7 100 руб.
+                                    <span class="price-line"></span>
+                                </div>
+                            </div>
+                            <a href="" class="product-add-to-card">
+                                <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="./assets/img/sprite.svg#shop-cardWhite"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="product-add-to-like">
+                                <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="./assets/img/sprite.svg#orange-like"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./assets/img/product-1.png" alt="" class="product-image">
+                    <div class="product-content">
+                        <h4 class="product-title">Радиатор Radena алюминиевый R500/85 - 6 секций</h4>
+                        <div class="product-status">
+                            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="./assets/img/sprite.svg#arrow-done"></use>
+                            </svg>
+                            В наличии
+                        </div>
+                        <div class="product-info">
+                            <div class="product-info__compare">
+                                <input type="checkbox" name="" id="checkbox" value="Сравнить">
+                                <label for="checkbox">Сравнить</label>
+                            </div>
+                            <p class="product-info__reviews">0 отзывов</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="product-price">
+                                <p class="new-price">7 100 руб.</p>
+                                <div class="old-price">
+                                    7 100 руб.
+                                    <span class="price-line"></span>
+                                </div>
+                            </div>
+                            <a href="" class="product-add-to-card">
+                                <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="./assets/img/sprite.svg#shop-cardWhite"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="product-add-to-like">
+                                <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="./assets/img/sprite.svg#orange-like"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./assets/img/product-1.png" alt="" class="product-image">
+                    <div class="product-content">
+                        <h4 class="product-title">Радиатор Radena алюминиевый R500/85 - 6 секций</h4>
+                        <div class="product-status">
+                            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="./assets/img/sprite.svg#arrow-done"></use>
+                            </svg>
+                            В наличии
+                        </div>
+                        <div class="product-info">
+                            <div class="product-info__compare">
+                                <input type="checkbox" name="" id="checkbox" value="Сравнить">
+                                <label for="checkbox">Сравнить</label>
+                            </div>
+                            <p class="product-info__reviews">0 отзывов</p>
+                        </div>
+                        <div class="product-action">
+                            <div class="product-price">
+                                <p class="new-price">7 100 руб.</p>
+                                <div class="old-price">
+                                    7 100 руб.
+                                    <span class="price-line"></span>
+                                </div>
+                            </div>
+                            <a href="" class="product-add-to-card">
+                                <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="./assets/img/sprite.svg#shop-cardWhite"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="product-add-to-like">
+                                <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="./assets/img/sprite.svg#orange-like"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="mobile-bottom__menu">
+            <a href="" class="mobile-bottom__menu-link">
+                <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/img/sprite.svg#m-home"></use>
+                </svg>
+                Главная
+            </a>
+            <a href="" class="mobile-bottom__menu-link">
+                <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/img/sprite.svg#m-like"></use>
+                </svg>
+                Избранное
+            </a>
+            <a href="" class="mobile-bottom__menu-link">
+                <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/img/sprite.svg#m-cart"></use>
+                </svg>
+                Корзина
+            </a>
+            <a href="" class="mobile-bottom__menu-link">
+                <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/img/sprite.svg#m-chart"></use>
+                </svg>
+                Сравнить
+            </a>
+            <a href="" class="mobile-bottom__menu-link">
+                <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./assets/img/sprite.svg#m-user"></use>
+                </svg>
+                Профиль
+            </a>
+        </nav>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column__with-logo">
+                <img src="./assets/img/logo.png" alt="" class="footer-logo">
+                <div class="footer-contact">
+                    <a href="" class="footer-link">+7 000 000 00 00</a>
+                    <a href="" class="footer-link">почта@mail.ru</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <a href="" class="footer-link">Все товары</a>
+                <a href="" class="footer-link">Автотовары и оборудование</a>
+                <a href="" class="footer-link">Инструмент</a>
+                <a href="" class="footer-link">Леса строительные</a>
+                <a href="" class="footer-link">Отопление</a>
+            </div>
+            <div class="footer-column">
+                <a href="" class="footer-link">Ручной инструмент</a>
+                <a href="" class="footer-link">Строительная техника</a>
+                <a href="" class="footer-link">Сварочное оборудование</a>
+                <a href="" class="footer-link">Водоснабжение</a>
+            </div>
+            <div class="footer-column">
+                <a href="" class="footer-link">Блог</a>
+                <a href="" class="footer-link">Контакты</a>
+                <a href="" class="footer-link">Мой аккаунт</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/app.js"></script>
+</body>
+</html>
